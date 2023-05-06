@@ -1,0 +1,421 @@
+/*Body*/
+
+/* Dark mode styles */
+.dark-mode,
+.dark-mode .nav,
+.dark-mode .footer,
+.dark-mode .linkbox1 a,
+.dark-mode .linkbox2 a{
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.dark-mode .error{
+    color: red;
+}
+
+input{
+    caret-color: #52A0FC;
+}
+::selection{
+    color: black;
+    background: #52A0FC;
+}
+.error{
+    color: red;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/*End of body*/
+
+/*Header*/
+
+.nav{
+    background-color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    .navlogo{
+        display: none;
+    }
+    .navlinks{
+        display: flex;
+        justify-content: space-around;
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navlinks{
+        width: 10%;
+        margin-top: 0.5em;
+    }
+    .link{
+        font-size: 10px;
+    }
+    .navlogin{
+        width: 70%;
+        position: absolute;
+        margin-left: 12em;
+    }
+}
+.navlogo{
+    float: left;
+    width: 100px;
+    padding-left: 10px;
+}
+.navlogo img{
+    width: 100px;
+    height: 100px;
+}
+.navlinks{
+    float: left;
+    width: 30%;
+
+    padding: 2.3em;
+}
+.link{
+    text-decoration: none;
+    color: #52A0FC;
+    padding-left: 2em;
+}
+.navlogin{
+    float: right;
+    width: 50%;
+    padding-right: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.name{
+    font-size: 15px;
+    color: #52A0FC;
+    width: 30%;
+    margin-left: 3em;
+    margin-top: 2.3em;
+}
+
+/*End of header*/
+
+/*button*/
+
+.button{
+    background-color: transparent;
+    color: #52A0FC;
+    border: 1px solid #52A0FC;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 1em;
+    width: auto;
+    margin-top: 1.5em;
+    transition: 1s;
+}
+
+.button:hover{
+    background-color: #52A0FC;
+    color: white;
+}
+
+.button2{
+    background-color: #52A0FC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 1em;
+    width: auto;
+    margin-top: 1.5em;
+    transition: 1s;
+}
+
+.button2:hover{
+    background-color: transparent;
+    color: #52A0FC;
+    border: 1px solid #52A0FC;
+}
+
+/*End of button*/
+
+/*Main*/
+
+.maindiv{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*end main*/
+
+/*Afbeeldingen*/
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.main_img{
+    float: left;
+    width: 50%;
+    margin-bottom: 5em;
+}
+
+.main_img img{
+    width: 99.5%;
+    height: 100%;
+    border-radius: 0.5em;
+    cursor: zoom-in;
+}
+
+.extra_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: right;
+    width: 49.9%;
+    margin-bottom: 5em;
+}
+.top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+.extra_img img{
+    width: 49.5%;
+    border-radius: 0.5em;
+    cursor: zoom-in;
+}
+
+/*End of afbeeldingen*/
+
+/*Beschrijving*/
+
+@media screen and (max-width: 600px) {
+    .title{
+        width: 90%;
+        margin-right: 10px;
+    }
+}
+
+.title{
+    padding: 1em;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 1em;
+}
+
+.adres{
+    padding: 1em;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 1em;
+}
+
+.ad{
+    font-size: 20px;
+}
+
+.beschrijving_text{
+    padding: 1em;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 1em;
+}
+
+.bp{
+    font-size: 20px;
+}
+
+/*End of beschrijving*/
+
+/*biedningen*/
+
+@media screen and (max-width: 600px) {
+    .bieden{
+        width: 90%;
+        margin-right: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .bieden button{
+        margin-top: 0em;
+    }
+
+.bieding{
+        width: 90%;
+        margin-right: 80px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.bieden{
+    float: right;
+    width: 50%;
+    padding-right: 10px;
+    text-align: center;
+}
+.bieden button{
+    margin-top: 7em;
+}
+.bieding{
+    font-size: 17px;
+    padding: 1em;
+    width: 50%;
+    margin-top: 3em;
+    float: right;
+    text-align: center;
+}
+
+.bieden input {
+    background-color: transparent;
+    color: #52A0FC;
+    border: 1px solid #52A0FC;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 1em;
+    width: auto;
+    margin-top: 7em;
+    transition: 1s;
+}
+
+.bieden input:hover{
+    background-color: #52A0FC;
+    color: white;
+    border: 1px solid #52A0FC;
+}
+
+/*End of biedingen*/
+
+/*locatie*/
+
+iframe{
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    iframe{
+        width: 100%;
+        margin-left: 0em;
+    }
+}
+
+/*end locatie*/
+
+/*Footer*/
+
+@media screen and (max-width: 600px) {
+    .linkbox1{
+        display: none;
+    }
+    .linkbox2{
+        display: none;
+    }
+    .linkbox1 a{
+        display: none;
+    }
+    .linkbox2 a{
+        display: none;
+    }
+    .logo{
+        min-width: 100%;
+        text-align: center;
+    }
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.linkbox1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 33%;
+    margin-left: 3em;
+    margin-top: 10em;
+}
+
+.linkbox1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.logo{
+    width: 25%;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.logo img{
+    width: 50%;
+    margin: auto;
+}
+
+.linkbox2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 33%;
+    margin-top: 10em;
+    margin-right: 3em;
+    float: right;
+}
+
+.linkbox2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*End of footer*/
+
+/*overlay*/
+.overlay {
+    position: absolute;
+    background: rgb(0, 0, 0, 0.2);
+    width: 90%;
+    border-radius: 0.5em;
+    padding: 0.1em;
+    padding-left: 0.4em;
+}
+
+.overlayoverlay{
+    position: absolute;
+    padding: 0.7em;
+    width: 10.3%;
+}
+
+/*End overlay*/
