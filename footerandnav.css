@@ -76,12 +76,10 @@
 }
 .navlogo{
     float: left;
-    width: 100px;
     padding-left: 10px;
 }
 .navlogo img{
-    width: 400px;
-    height: 100px;
+    min-width: 400px;
 }
 .navlinks{
     float: left;

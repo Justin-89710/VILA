@@ -62,7 +62,7 @@ if (isset($_SESSION['username'])) {
     <div class="popup">
         <div class="popup-content">
             <span class="close">&times;</span>
-            <p>Hello, <span id="username"><?php echo $_SESSION['username']; ?></span></p>
+            <p><span id="username"><?php echo $_SESSION['username']; ?></span></p>
             <div class="progress-container">
                 <div class="progress-bar" id="myBar"></div>
             </div>
@@ -104,6 +104,18 @@ if (isset($_SESSION['username'])) {
                 progressBar.style.width = width + '%';
             }
         }
+
+        var gettime = new Date().getHours();
+        var greeting;
+        if (gettime < 12) {
+            greeting = "Goedemorgen";
+        } else if (gettime < 18) {
+            greeting = "Goedemiddag";
+        } else {
+            greeting = "Goedenavond";
+        }
+        //put it in the span
+        document.getElementById('username').innerHTML = greeting + ", " + document.getElementById('username').innerHTML
     </script>
 </body>
 </html>

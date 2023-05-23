@@ -17,10 +17,10 @@ if (isset($_POST['submit'])) {
             header('Location: home.php');
             exit;
         } else {
-            $error = "email en/of wachtwoord zijn onjuist.";
+            $error = "Username en/of wachtwoord zijn onjuist.";
         }
     } else {
-        $error = "email en/of wachtwoord zijn onjuist.";
+        $error = "Username en/of wachtwoord zijn onjuist.";
     }
 
     $db->close();
