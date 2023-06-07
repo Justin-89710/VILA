@@ -22,10 +22,6 @@ if (isset($_POST['register'])) {
         $error = "Username must be at least 4 characters";
     } else if (strlen($username) > 20) {
         $error = "Username must be less than 20 characters";
-    } else if (preg_match('/[A-Z]/', $username) == 0) {
-        $error = "Username must contain at least one uppercase letter";
-    } else if (preg_match('/[a-z]/', $username) == 0) {
-        $error = "Username must contain at least one lowercase letter";
     } else {
         // encrypt the password
         $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
@@ -49,6 +45,7 @@ if (isset($_POST['register'])) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="afbeeldingen/Logo.png">
     <title>Register</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -78,7 +75,7 @@ if (isset($_POST['register'])) {
         {
             position: relative;
             width: 380px;
-            height: 420px;
+            height: 600px;
             background: #eeeeee;
             border-radius: 8px;
             overflow: hidden;
@@ -91,7 +88,7 @@ if (isset($_POST['register'])) {
             top: -50%;
             left: -50%;
             width: 380px;
-            height: 420px;
+            height: 600px;
             transform-origin: bottom right;
             background: linear-gradient(0deg,transparent,#52A0FC,#52A0FC);
             animation: animate 6s linear infinite;
@@ -104,7 +101,7 @@ if (isset($_POST['register'])) {
             top: -50%;
             left: -50%;
             width: 380px;
-            height: 420px;
+            height: 600px;
             transform-origin: bottom right;
             background: linear-gradient(0deg,transparent,#52A0FC,#52A0FC);
             animation: animate 6s linear infinite;
@@ -243,6 +240,10 @@ if (isset($_POST['register'])) {
             margin-top: 10px;
             position: absolute;
         }
+        .info{
+            color: rgb(175, 175, 175);
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -255,12 +256,14 @@ if (isset($_POST['register'])) {
             <i></i>
             <span class="username-status"></span>
         </div>
+        <span class="info">minimaal 4 leters <br> maximaal 20 tekens <br> alleen letters</span>
         <span id="message"></span>
         <div class="inputBox">
             <input type="password" name="password" required>
             <span>Password</span>
             <i></i>
         </div>
+        <span class="info">minimaal 8 tekens <br> minimaal 1 hoofdleter <br> minimaal 1 klijne letter <br> minimaal 1 getal <br> minimaal 1 seciaal teken <br> max 20 tekens.</span>
         <div class="links">
         <a href="Login.php">Login</a>
         </div>

@@ -101,6 +101,7 @@ if (isset($_POST['updatebid'])) {
                 <input type="submit" name="updatebid" value="Update bids">
             </form>
         </div>
+        <a href="home.php">Home</a>
     </div>
 </div>
 

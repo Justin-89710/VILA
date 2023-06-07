@@ -1,3 +1,62 @@
+@media screen and (max-width: 600px) {
+    .navlogo{
+        display: none;
+    }
+    .navlinks{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+    .navlogin{
+        width: 70%;
+        position: absolute;
+        margin-left: 14em;
+    }
+    .link{
+        font-size: 10px;
+    }
+    .bieden{
+        width: 90%;
+        margin-right: 25%;
+    }
+    .bieding{
+        width: 90%;
+        margin-right: 80px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+    }
+    #bieding{
+        width: 90%;
+        margin-right: 25%;
+    }
+    .linkbox1{
+        display: none;
+    }
+    .linkbox2{
+        display: none;
+    }
+    .linkbox1 a{
+        display: none;
+    }
+    .linkbox2 a{
+        display: none;
+    }
+    .logo{
+        min-width: 100%;
+        text-align: center;
+    }
+    .title{
+        width: 90%;
+    }
+    iframe{
+        width: 100%;
+    }
+    .overlay{
+        font-size: 10px;
+    }
+}
+
 /* Dark mode styles */
 .dark-mode,
 .dark-mode .nav,

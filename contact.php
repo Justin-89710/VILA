@@ -214,6 +214,9 @@ $db = new SQLite3('Database.db');
             justify-content: space-between;
             width: 100%;
         }
+        .info{
+            color: rgb(175, 175, 175);
+        }
     </style>
     <link rel="stylesheet" href="vila.css">
 </head>
@@ -270,26 +273,25 @@ $db = new SQLite3('Database.db');
             <span>Vraag</span>
             <i></i>
         </div>
+        <span class="info">max van 255 tekens</span>
         <input type="submit" name="submit" value="Submit">
     </form>
 </div>
 </div>
 <div class="footer">
     <div class="linkbox1">
-        <a href="#">Mobile app</a>
-        <a href="#">Community</a>
-        <a href="#">Company</a>
+        <a href="comingsoon.php">Mobile app</a>
+        <a href="comingsoon.php">Community</a>
+        <a href="comingsoon.php">Company</a>
     </div>
     <div class="logo">
         <img src="afbeeldingen/Logo.png" alt="logo">
     </div>
     <div class="linkbox2">
-        <a href="#">Help desk</a>
-        <a href="#">Blog</a>
-        <a href="#">Recources</a>
+        <a href="contact.php">Help desk</a>
+        <a href="comingsoon.php">Blog</a>
+        <a href="comingsoon.php">Recources</a>
     </div>
-</div>
-</div>
 <script>
     // Check if user's browser is in dark mode
     const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
